@@ -1,0 +1,55 @@
+.layer {
+    position: absolute;
+    display: table;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.layer .layer-inner {
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.layer .layer-inner .content {
+    display: inline-block;
+}
+
+.layer .layer-inner .content .header {
+    margin: 0;
+    padding: 0;
+}
+
+.layer .layer-inner .content .header .title {
+    font-size: 72px;
+    font-weight: 900;
+    text-align: left;
+    color: #ffffff;
+
+    margin-right: 371px;
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
+.layer .layer-inner .content .header .fbIcon {
+    width: 22px;
+    height: 22px;
+    margin-right: 15px;
+}
+
+.layer .layer-inner .content .line {
+    width: 777px;
+    height: 1px;
+    background-color: white;
+    margin-top: 24px;
+}
+
+ul {
+    padding: 0;
+}
+
+li {
+    display: inline-block;
+}

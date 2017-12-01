@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { WrapperImg, BG2, FBIcon } from '../../components';
+import { WrapperImg, BG2, FBIcon, CardGroup } from '../../components';
 import './IntroPage.css';
 
 class IntroPage extends Component {
@@ -9,15 +9,14 @@ class IntroPage extends Component {
         this.state = {
             iconSrcs: [FBIcon, FBIcon, FBIcon],
             iconClasses: ["fbIcon", "fbIcon", "fbIcon"],
+
         };
     }
 
     render() {
         const icons = [];
         for(let i = 0; i < this.state.iconSrcs.length; i++)
-            icons.push(<li><img src={this.state.iconSrcs[i]} className={this.state.iconClasses[i]}/></li>);
-
-
+            icons.push(<li key={i}><img src={this.state.iconSrcs[i]} className={this.state.iconClasses[i]} key={i}/></li>);
 
         return (
             <div style={{height: "100vh", width: "100%", position: "relative"}}>
@@ -30,7 +29,7 @@ class IntroPage extends Component {
                                 {icons}
                             </ul>
                             <div className="line"></div>
-                            <ul className=""></ul>
+                            <CardGroup count={6} />
                         </div>
                     </div>
                 </div>

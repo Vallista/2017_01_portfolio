@@ -1,0 +1,26 @@
+.line-wrapper {
+    position: relative;
+    display: inline-block;
+    float: left;
+    margin-right: 16px;
+    margin-top: 50px;
+}
+
+.card {
+    display: table;
+    top: 0;
+    left: 0;
+    width: 250px;
+    height: 100px;
+    background-color: white;
+}
+
+.card .card-wrapper {
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.card .card-wrapper .content {
+    display: inline-block;
+}

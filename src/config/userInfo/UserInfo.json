@@ -1,0 +1,8 @@
+{
+    "Company": [
+        { "name" : "INTERPARK corp", "start" : "13.09", "end" : "14.02", "description" : "Strategy & Planning Team" },
+        { "name" : "HOMI corp", "start" : "14.02", "end" : "17.06", "description" : "Game Client Developer" },
+        { "name" : "Republic Dot", "start" : "17.07", "end" : "17.11", "description" : "Web Developer" },
+        { "name" : "Korean Game Science High School", "start" : "14.03", "end" : "17.06", "description" : "C/C++/C# with Unity, basic programming teacher" }
+    ]
+}

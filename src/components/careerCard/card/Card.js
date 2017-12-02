@@ -9,7 +9,9 @@ class Card extends Component {
                 <div className="card">
                     <div className="card-wrapper">
                         <div className="content">
-                            {this.props.name}
+                            <p className="title">{this.props.name}</p>
+                            <p className="date">{this.props.start} ~ {this.props.end}</p>
+                            <p className="description">{ this.props.description }</p>
                         </div>
                     </div>
                 </div>
@@ -20,6 +22,9 @@ class Card extends Component {
 
 Card.propTypes = {
     name: PropTypes.string.isRequired,
+    start: PropTypes.string.isRequired,
+    end: PropTypes.string.isRequired,
+    description: PropTypes.string.isRequired,
 };
 
 export default Card;

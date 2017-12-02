@@ -3,24 +3,49 @@
     display: inline-block;
     float: left;
     margin-right: 16px;
-    margin-top: 50px;
+    margin-top: 30px;
 }
 
-.card {
+.line-wrapper .card {
     display: table;
     top: 0;
     left: 0;
     width: 250px;
     height: 100px;
-    background-color: white;
 }
 
-.card .card-wrapper {
+.line-wrapper .card .card-wrapper {
     display: table-cell;
     text-align: center;
     vertical-align: middle;
 }
 
-.card .card-wrapper .content {
+.line-wrapper .card .card-wrapper .content {
+    width: 250px;
     display: inline-block;
+    text-align: left;
+}
+
+.line-wrapper .card .card-wrapper .content .title {
+    margin-top: 0;
+    font-size: 18px;
+    margin-bottom: 13px;
+    font-weight: 300;
+    letter-spacing: normal;
+    color: white;
+}
+
+.line-wrapper .card .card-wrapper .content .date {
+    font-weight: 300;
+    margin-top: 0;
+    margin-bottom: 4px;
+    font-size: 13px;
+    color: lightgray;
+}
+
+.line-wrapper .card .card-wrapper .content .description {
+    font-weight: 300;
+    margin: 0;
+    font-size: 13px;
+    color: lightgray;
 }

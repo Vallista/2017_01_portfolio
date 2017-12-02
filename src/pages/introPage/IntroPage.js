@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
-import { WrapperImg, BG2, FBIcon, CardGroup } from '../../components';
+import { WrapperImg, BG2, FBIcon, GHIcon, TSIcon, CardGroup } from '../../components';
+import { UserInfo } from '../../config';
 import './IntroPage.css';
 
 class IntroPage extends Component {
@@ -7,16 +8,16 @@ class IntroPage extends Component {
         super();
 
         this.state = {
-            iconSrcs: [FBIcon, FBIcon, FBIcon],
+            iconSrcs: [FBIcon, GHIcon, TSIcon],
             iconClasses: ["fbIcon", "fbIcon", "fbIcon"],
-
+            iconUrls: [UserInfo.link.github, UserInfo.link.facebook, UserInfo.link.tistory],
         };
     }
 
     render() {
         const icons = [];
         for(let i = 0; i < this.state.iconSrcs.length; i++)
-            icons.push(<li key={i}><img src={this.state.iconSrcs[i]} className={this.state.iconClasses[i]} key={i}/></li>);
+            icons.push(<li key={i}><button onClick={() => { window.open(this.state.iconUrls[i]) }}><img src={this.state.iconSrcs[i]} className={this.state.iconClasses[i]} key={i}/></button></li>);
 
         return (
             <div style={{height: "100vh", width: "100%", position: "relative"}}>

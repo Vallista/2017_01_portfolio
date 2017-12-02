@@ -18,8 +18,12 @@ class CardGroup extends Component {
 
         const cardArray = [];
         this.state.company.forEach((elem, idx) => {
-            const name = elem.name;
-            cardArray.push(<Card name={name} key={idx}/>);
+            const name = elem.name,
+                start = elem.start,
+                end = elem.end,
+                description = elem.description;
+
+            cardArray.push(<Card name={name} start={start} end={end} description={description} key={idx}/>);
         });
 
         return (

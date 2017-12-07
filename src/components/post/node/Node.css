@@ -1,0 +1,10 @@
+.node {
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    background-color: #ffffff;
+    border-radius: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 16px;
+}

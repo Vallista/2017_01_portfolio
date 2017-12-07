@@ -21,7 +21,7 @@ class IntroPage extends Component {
 
         return (
             <div style={{height: "100vh", width: "100%", position: "relative"}}>
-                <WrapperImg img={BG2} zIndex={-2} width={"100vw"} height={"100vh"}/>
+                <WrapperImg img={BG2} zIndex={0} width={"100vw"} height={"100vh"}/>
                 <div className="layer">
                     <div className="layer-inner">
                         <div className="content">

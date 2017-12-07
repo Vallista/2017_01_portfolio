@@ -1,0 +1,9 @@
+.post-wrapper {
+    margin-top: 100px;
+    position: absolute;
+    height: 300px;
+    width: 1px;
+    background-color: gray;
+    left: 50%;
+    transform: translateX(-50%);
+}

@@ -15,3 +15,37 @@
         opacity: 0;
     }
 }
+
+@keyframes box-hover {
+    0% {
+
+    }
+    100% {
+        background-color: #ffffff;
+    }
+}
+
+@keyframes box-out {
+    0% {
+        background-color: #ffffff;
+    }
+    100% {
+
+    }
+}
+
+@keyframes soft-move-right {
+    0% {
+    }
+    100% {
+        transform: translateX(10px);
+    }
+}
+
+@keyframes soft-move-right-rev {
+    0% {
+        transform: translateX(10px);
+    }
+    100% {
+    }
+}

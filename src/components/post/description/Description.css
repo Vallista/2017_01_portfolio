@@ -1,0 +1,47 @@
+.description {
+    position: absolute;
+    text-align: center;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.description .titleBox {
+    display: block;
+    width: 400px;
+    height: 150px;
+    margin-right: 560px;
+}
+
+.description .titleBox .title {
+    display: block;
+    color: white;
+    font-size: 54px;
+    text-align: right;
+    align: right;
+    margin-top: 0;
+    margin-bottom: 0;
+    font-weight: 900;
+    letter-spacing: -0.8px;
+}
+
+.description .titleBox .subtitle {
+    display: block;
+    color: gray;
+    font-size: 16px;
+    text-align: right;
+    align: right;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.description .titleBox .desc {
+    display: block;
+    color: #bbbbbb;
+    font-size: 16px;
+    text-align: right;
+    align: right;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+

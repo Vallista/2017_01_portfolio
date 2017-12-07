@@ -1,22 +1,3 @@
-.layer {
-    position: absolute;
-    display: table;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-}
-
-.layer .layer-inner {
-    display: table-cell;
-    text-align: center;
-    vertical-align: middle;
-}
-
-.layer .layer-inner .content {
-    display: inline-block;
-}
-
 .layer .layer-inner .content .header {
     margin: 0;
     padding: 0;

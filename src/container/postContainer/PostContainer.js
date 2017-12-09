@@ -9,7 +9,7 @@ class PostContainer extends Component {
         super();
 
         this.state = {
-            spec: UserInfo.spec,
+            projects: UserInfo.projects,
         };
     }
 
@@ -17,7 +17,7 @@ class PostContainer extends Component {
 
         return (
             <PostWrapper>
-                <PostList infos={this.state.spec} change={this.props.change} />
+                <PostList projects={this.state.projects} change={this.props.change} />
             </PostWrapper>
         );
     }

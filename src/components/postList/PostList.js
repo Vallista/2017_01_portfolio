@@ -9,7 +9,7 @@ import { BW1, BW2, BW3,
     RR1,
     RS } from '../../components/images';
 
-const PostList = ({ infos, change }) => {
+const PostList = ({ projects, change }) => {
     const pictureList = [
         [RR1],
         [RS],  // 태권도
@@ -21,7 +21,7 @@ const PostList = ({ infos, change }) => {
         [BW1, BW2],
     ];
 
-    const postList = infos.map(
+    const postList = projects.map(
         (post, index) => (
             <Post title={post.title} subtitle={post.subtitle} description={post.description} picture={pictureList[index]} key={index} change={change} />
         ));

@@ -21,7 +21,7 @@ class Home extends Component {
     }
 
     fadingDone () {
-        window.location = process.env.PUBLIC_URL + '/tree';
+        window.location = process.env.PUBLIC_URL + '/projects';
     }
 
     componentWillUnmount () {

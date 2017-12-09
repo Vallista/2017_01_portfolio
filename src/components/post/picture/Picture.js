@@ -6,7 +6,7 @@ const Picture = ({title, picture, key, change}) => {
     return (
         <div className="picture">
             {/*<img src={picture} alt={"picture" + key}/>*/}
-            <TransitionImage photoArray={picture} transitionHold={2000} change={change} title={title} />
+            <TransitionImage photoArray={picture} transitionHold={2000} change={(data) => {change('/projects/' + data)}} title={title} />
         </div>
     );
 };

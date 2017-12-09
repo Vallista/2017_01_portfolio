@@ -17,7 +17,7 @@ class PostContainer extends Component {
 
         return (
             <PostWrapper>
-                <PostList infos={this.state.spec} />
+                <PostList infos={this.state.spec} change={this.props.change} />
             </PostWrapper>
         );
     }

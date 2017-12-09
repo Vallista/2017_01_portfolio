@@ -33,6 +33,8 @@ class Nav extends Component {
     handleScroll() {
         const scrollTop = (document.documentElement && document.documentElement.scrollTop) || document.body.scrollTop;
 
+        console.log(scrollTop);
+
         this.setState({isChapter: parseInt(scrollTop / window.innerHeight), scrollTop});
     }
 

@@ -6,6 +6,7 @@ import { ScrollMove } from './scrollMove';
 import { PostWrapper } from './postWrapper';
 import { Post } from './post';
 import { PostList } from './postList';
+import { TransitionImage } from './transitionImage';
 
 export {
     Nav,
@@ -14,4 +15,5 @@ export {
     CardGroup, Card,
     ScrollMove,
     Post, PostWrapper, PostList,
+    TransitionImage,
 }

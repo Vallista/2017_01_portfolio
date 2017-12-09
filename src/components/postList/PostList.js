@@ -1,23 +1,29 @@
 import React from 'react';
 import { Post } from '../index';
-import { BW1, PD1, TB1, TL1, WT1, RR1, RS, PD2 } from '../../components/images';
 import './PostList.css';
+import { BW1, BW2, BW3,
+    PD1, PD2, PD3, PD4,
+    TB1, TB2, TB3, TB4,
+    TL1, TL2, TL3,
+    WT1, WT2, WT3,
+    RR1,
+    RS } from '../../components/images';
 
-const PostList = ({ infos }) => {
+const PostList = ({ infos, change }) => {
     const pictureList = [
-        RR1,
-        RS,  // 태권도
-        PD1, // 판다리아 러닝
-        TL1,
-        TB1,
-        WT1,
-        PD1, // 판다리아 퍼즐
-        BW1,
+        [RR1],
+        [RS],  // 태권도
+        [PD1, PD2], // 판다리아 러닝
+        [TL1, TL2],
+        [TB1, TB2],
+        [WT1, WT2],
+        [PD1, PD2], // 판다리아 퍼즐
+        [BW1, BW2],
     ];
 
     const postList = infos.map(
         (post, index) => (
-            <Post title={post.title} subtitle={post.subtitle} description={post.description} picture={pictureList[index]} key={index} />
+            <Post title={post.title} subtitle={post.subtitle} description={post.description} picture={pictureList[index]} key={index} change={change} />
         ));
 
     return (

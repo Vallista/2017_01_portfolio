@@ -11,7 +11,7 @@ class Card extends Component {
                         <div className="content">
                             <p className="title">{this.props.name}</p>
                             <p className="date">{this.props.start} ~ {this.props.end}</p>
-                            <p className="description">{ this.props.description }</p>
+                            <p className="description2">{ this.props.description }</p>
                         </div>
                     </div>
                 </div>

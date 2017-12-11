@@ -8,7 +8,7 @@ import registerServiceWorker from './registerServiceWorker';
 import './index.css';
 
 ReactDOM.render(
-    <BrowserRouter>
+    <BrowserRouter basename="/portfolio">
         <App />
     </BrowserRouter>,
     document.getElementById('root')

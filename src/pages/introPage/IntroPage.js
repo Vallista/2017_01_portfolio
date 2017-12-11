@@ -10,7 +10,7 @@ class IntroPage extends Component {
         this.state = {
             iconSrcs: [FBIcon, GHIcon, TSIcon],
             iconClasses: ["fbIcon", "fbIcon", "fbIcon"],
-            iconUrls: [UserInfo.link.github, UserInfo.link.facebook, UserInfo.link.tistory],
+            iconUrls: [UserInfo.link.facebook, UserInfo.link.github, UserInfo.link.tistory],
         };
     }
 

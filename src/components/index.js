@@ -7,6 +7,8 @@ import { PostWrapper } from './postWrapper';
 import { Post } from './post';
 import { PostList } from './postList';
 import { TransitionImage } from './transitionImage';
+import { DetailWrapper } from './detailWrapper';
+import { ReviewRepublic } from './detail';
 
 export {
     Nav,
@@ -16,4 +18,6 @@ export {
     ScrollMove,
     Post, PostWrapper, PostList,
     TransitionImage,
+    DetailWrapper,
+    ReviewRepublic,
 }

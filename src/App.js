@@ -12,9 +12,9 @@ class App extends Component {
     render() {
         return (
             <div>
-                <RoutePath title={'/'} component={Home} exact={true} />
-                <RoutePath title={'/projects'} component={TreePage} exact={true} />
                 <Switch>
+                    <Route exact path={process.env.PUBLIC_URL + '/'} component={Home} />
+                    <Route exact path={process.env.PUBLIC_URL + '/projects'} component={TreePage} />
                     <RoutePath title={'/projects/:page'} component={DetailPage} exact={true} />
                 </Switch>
             </div>

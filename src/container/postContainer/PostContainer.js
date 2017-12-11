@@ -3,7 +3,6 @@ import './PostContainer.css';
 import { PostWrapper, PostList } from '../../components';
 import { UserInfo } from '../../config';
 
-
 class PostContainer extends Component {
     constructor() {
         super();
@@ -14,7 +13,6 @@ class PostContainer extends Component {
     }
 
     render() {
-
         return (
             <PostWrapper>
                 <PostList projects={this.state.projects} change={this.props.change} />

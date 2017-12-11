@@ -7,7 +7,8 @@ import { BW1, BW2, BW3,
     TL1, TL2, TL3,
     WT1, WT2, WT3,
     RR1,
-    RS } from '../../components/images';
+    RS,
+    CC1, CC2, CC3} from '../../components/images';
 
 const PostList = ({ projects, change }) => {
     const pictureList = [
@@ -19,11 +20,15 @@ const PostList = ({ projects, change }) => {
         [WT1, WT2],
         [PD1, PD2], // 판다리아 퍼즐
         [BW1, BW2],
+        [RS], // 리듬스타
+        [CC1, CC2], // 크레이지 비트
     ];
 
     const postList = projects.map(
         (post, index) => (
-            <Post title={post.title} subtitle={post.subtitle} description={post.description} picture={pictureList[index]} key={index} change={change} />
+            <div data-aos="fade-up" data-aos-anchor-placement="top-center">
+                <Post title={post.title} subtitle={post.subtitle} description={post.description} picture={pictureList[index]} key={index} change={change} />
+            </div>
         ));
 
     return (

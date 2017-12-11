@@ -1,0 +1,15 @@
+.detail {
+    padding-top: 180px;
+    width: 70vw;
+}
+
+.detail > .chapter1 {
+    position: relative;
+    height: auto;
+    margin-bottom: 150px;
+}
+
+.detail > .chapter2 {
+    position: relative;
+    height: auto;
+}

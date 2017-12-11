@@ -1,5 +1,6 @@
-import { UserInfo } from './userInfo';
+import { UserInfo, PostInfo } from './userInfo';
 
 export {
     UserInfo,
+    PostInfo,
 }

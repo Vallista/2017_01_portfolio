@@ -1,18 +1,18 @@
-.description {
+.post > .description {
     position: absolute;
     text-align: center;
     left: 50%;
     transform: translateX(-50%);
 }
 
-.description .titleBox {
+.post > .description .titleBox {
     display: block;
     width: 400px;
     height: 150px;
     margin-right: 560px;
 }
 
-.description .titleBox .title {
+.post > .description .titleBox .title {
     display: block;
     color: white;
     font-size: 54px;
@@ -24,7 +24,7 @@
     letter-spacing: -0.8px;
 }
 
-.description .titleBox .subtitle {
+.post > .description .titleBox .subtitle {
     display: block;
     color: gray;
     font-size: 16px;
@@ -34,7 +34,7 @@
     margin-bottom: 0;
 }
 
-.description .titleBox .desc {
+.post > .description .titleBox .desc {
     display: block;
     color: #bbbbbb;
     font-size: 16px;

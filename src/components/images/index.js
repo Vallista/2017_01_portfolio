@@ -29,7 +29,9 @@ import WT2 from './western-2.jpg';
 import WT3 from './western-3.jpg';
 
 import RR1 from './rr-1.png';
-
+import RR2 from './rr-2.png';
+import RR3 from './rr-3.png';
+import RR4 from './rr-4.png';
 
 export {
     DownIcon,
@@ -45,6 +47,5 @@ export {
     TB1, TB2, TB3, TB4,
     TL1, TL2, TL3,
     WT1, WT2, WT3,
-    RR1,
-
+    RR1, RR2, RR3, RR4
 }

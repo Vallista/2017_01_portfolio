@@ -77,6 +77,18 @@
       "title": "4D BIGWAR",
       "subtitle": "모션 디바이스 기계를 타고 움직이며 적의 요새를 부수는 게임",
       "description": "Client Programmer (Chief)",
+      "Since": "2014"
+    },
+    {
+      "title": "BMS Reader",
+      "subtitle": "리듬게임에 쓰이는 BMS 규격을 플레이 할 수 있는 시뮬레이터",
+      "description": "Client Programming (Side Project)",
+      "Since": "2014"
+    },
+    {
+      "title": "Crazy Beat",
+      "subtitle": "튕기는 방식의 새로운 체감형 리듬게임",
+      "description": "Client Programmer (Chief)",
       "Since": "2013"
     }
   ]

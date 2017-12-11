@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Nav, WrapperImg, BG3 } from '../../components';
+import {Nav, WrapperImg, BG3, DownIcon} from '../../components';
 import { PostContainer } from '../../container';
 import './TreePage.css';
 
@@ -22,13 +22,15 @@ class TreePage extends Component {
 
     render() {
         return (
-            <div style={{width: "100%"}} className={this.state.isChange === true ? "fadeOut" : "fadeIn"}>
-                <WrapperImg img={BG3} zIndex={-1} width={"100%"} height={"100%"} fix={"fixed"} opacity={0.8}/>
-                <Nav name="tree" change={() => {this.onReturn("/")}}/>
-                <div className="tree-wrapper">
-                    <div className="tree"/>
-                    <PostContainer change={(route) => {this.onReturn(route)}} />
+            <div>
+                <Nav name="projects" change={() => {this.onReturn("/")}}/>
+                <div className={this.state.isChange === true ? "fadeOut" : "fadeIn"}>
+                    <div className="tree-wrapper">
+                        <div className="tree"/>
+                        <PostContainer change={(route) => {this.onReturn(route)}} />
+                    </div>
                 </div>
+
             </div>
         );
     }

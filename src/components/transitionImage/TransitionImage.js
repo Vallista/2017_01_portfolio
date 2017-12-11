@@ -76,7 +76,7 @@ class TransitionImage extends Component {
 
         return (
             <div onMouseEnter={this.mouseEnter} onMouseOut={this.mouseOut} className="TransitionImage" onClick={() => {this.props.change(this.props.title)}}>
-                <img className={foreClassName} src={foreImage} alt="foreImage" />
+                <img className={foreClassName} src={foreImage} alt="foreImage"  />
                 <img className={backClassName} src={backImage} alt="backImage" />
             </div>
         );

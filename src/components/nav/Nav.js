@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import PropTypes from 'prop-types';
 import './nav.css';
+import {DownIcon} from "../index";
 
 class Nav extends Component {
     constructor() {
@@ -33,13 +34,11 @@ class Nav extends Component {
     handleScroll() {
         const scrollTop = (document.documentElement && document.documentElement.scrollTop) || document.body.scrollTop;
 
-        console.log(scrollTop);
-
         this.setState({isChapter: parseInt(scrollTop / window.innerHeight), scrollTop});
     }
 
     render() {
-        const { isChapter, isCenterTitle, isBack } = this.state;
+        const { isChapter, isCenterTitle, isBack, scrollTop } = this.state;
         const { name } = this.props;
         const circleArray = [];
 
@@ -51,13 +50,13 @@ class Nav extends Component {
                         <div className={"circle" + (isChapter === i ? "-full" : "") + (isCenterTitle ? " fadeIn" : " fadeOut")} key={i}/>
                     </div>
                 );
-        } else {
+        } else if (name === "projects" || name === "detail") {
             if(this.state.isBack === false) this.setState({isBack: true});
         }
 
         return (
             <div className="nav">
-                {!this.state.isBack && <div className="circle-group">
+                {!isBack && <div className="circle-group">
                     <div className="inner-group">
                         {circleArray}
                     </div>
@@ -66,10 +65,13 @@ class Nav extends Component {
                 <div className="home-button">HOME</div>
                 <div className="home-line"></div>
 
-                {isBack && <div>
+                {isBack &&
+                <div>
                     <div className="back-button" onClick={() => { this.props.change();}}>BACK</div>
                     <div className="back-line"></div>
                 </div>}
+
+                {(scrollTop < 3800 && name === "projects") && <img className="downIcon" src={DownIcon} style={{position:"fixed", left: "50%"}} /> }
             </div>
         );
     }

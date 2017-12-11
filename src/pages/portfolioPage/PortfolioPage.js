@@ -16,10 +16,10 @@ class PortfolioPage extends Component {
                                 this.props.paging();
                             }}>
                                 <div className="inner-field">
-                                    <p className="text"> click here. </p>
+                                    <p className="text"> 여기를 클릭해주세요. </p>
                                     <br/>
-                                    <p className="text"> Essentially, the most successful offshore software </p>
-                                    <p className="text"> development companies are </p>
+                                    <p className="text"> 프로그래머로써 게임, 웹등 여러가지를 구현한 목록입니다. </p>
+                                    <p className="text"> 상세한 설명도 들어가 있습니다. </p>
                                 </div>
                             </div>
                         </div>

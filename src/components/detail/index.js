@@ -1,9 +1,9 @@
-import ReviewRepublic from './ReviewRepublic';
+import Detail from './Detail';
 import { Description } from './description';
 import { Picture } from './picture';
 import { Title } from './title';
 
 export {
-    ReviewRepublic,
+    Detail,
     Description, Picture, Title,
 }

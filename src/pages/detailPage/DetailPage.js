@@ -25,10 +25,10 @@ class DetailPage extends Component {
 
         return (
             <div>
-                <Nav name="detail" change={() => {this.onReturn("/projects")}}/>
+                <Nav name="detail" change={(link) => {this.onReturn(link)}}/>
                 <div className={this.state.isChange === true ? "fadeOut" : "fadeIn"}>
                     {/*<h1 style={{color: "#ffffff"}}>{ match.params.page }</h1>*/}
-                    <DetailContainer/>
+                    <DetailContainer match={match}/>
                 </div>
             </div>
         );

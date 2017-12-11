@@ -53,6 +53,11 @@ class Nav extends Component {
         } else if (name === "projects" || name === "detail") {
             if(this.state.isBack === false) this.setState({isBack: true});
         }
+        const body = document.body,
+            html = document.documentElement;
+
+        const height = Math.max( body.scrollHeight, body.offsetHeight,
+            html.clientHeight, html.scrollHeight, html.offsetHeight );
 
         return (
             <div className="nav">
@@ -62,16 +67,16 @@ class Nav extends Component {
                     </div>
                 </div> }
 
-                <div className="home-button">HOME</div>
+                <div className="home-button" onClick={() => { this.props.change('/');}}>HOME</div>
                 <div className="home-line"></div>
 
                 {isBack &&
                 <div>
-                    <div className="back-button" onClick={() => { this.props.change();}}>BACK</div>
+                    <div className="back-button" onClick={() => { this.props.change( name === 'projects' ? '/' : '/projects');}}>BACK</div>
                     <div className="back-line"></div>
                 </div>}
 
-                {(scrollTop < 3800 && name === "projects") && <img className="downIcon" src={DownIcon} style={{position:"fixed", left: "50%"}} /> }
+                {(scrollTop < height - 1000 && name === "projects") && <img className="downIcon" src={DownIcon} style={{position:"fixed", left: "50%"}} /> }
             </div>
         );
     }

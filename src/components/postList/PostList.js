@@ -7,20 +7,22 @@ import { BW1, BW2, BW3,
     TL1, TL2, TL3,
     WT1, WT2, WT3,
     RR1,
-    RS,
-    CC1, CC2, CC3} from '../../components/images';
+    RS1, RS2,
+    CC1, CC2, CC3,
+    TV1, TV2,
+    PDD1, PDD2,} from '../../components/images';
 
 const PostList = ({ projects, change }) => {
     const pictureList = [
         [RR1],
-        [RS],  // 태권도
-        [PD1, PD2], // 판다리아 러닝
+        [TV1, TV2],  // 태권도
+        [PDD1, PDD2], // 판다리아 러닝
         [TL1, TL2],
         [TB1, TB2],
         [WT1, WT2],
         [PD1, PD2], // 판다리아 퍼즐
         [BW1, BW2],
-        [RS], // 리듬스타
+        [RS1, RS2], // 리듬스타
         [CC1, CC2], // 크레이지 비트
     ];
 

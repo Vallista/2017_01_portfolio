@@ -23,7 +23,7 @@ class TreePage extends Component {
     render() {
         return (
             <div>
-                <Nav name="projects" change={() => {this.onReturn("/")}}/>
+                <Nav name="projects" change={(link) => {this.onReturn(link)}}/>
                 <div className={this.state.isChange === true ? "fadeOut" : "fadeIn"}>
                     <div className="tree-wrapper">
                         <div className="tree"/>

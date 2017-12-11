@@ -8,7 +8,7 @@ import { Post } from './post';
 import { PostList } from './postList';
 import { TransitionImage } from './transitionImage';
 import { DetailWrapper } from './detailWrapper';
-import { ReviewRepublic } from './detail';
+import { Detail } from './detail';
 
 export {
     Nav,
@@ -19,5 +19,5 @@ export {
     Post, PostWrapper, PostList,
     TransitionImage,
     DetailWrapper,
-    ReviewRepublic,
+    Detail,
 }

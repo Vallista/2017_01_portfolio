@@ -9,7 +9,9 @@ class DetailPage extends Component {
 
         this.state = {
             isChange: false,
-        }
+        };
+
+        window.scrollTo(0, 0);
     }
 
     onReturn = (route) => {

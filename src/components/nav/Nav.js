@@ -72,7 +72,7 @@ class Nav extends Component {
 
                 {isBack &&
                 <div>
-                    <div className="back-button" onClick={() => { this.props.change( name === 'projects' ? '/' : '/projects');}}>BACK</div>
+                    <div className="back-button" onClick={() => { this.props.change( name === 'projects' ? '/' : '#/projects');}}>BACK</div>
                     <div className="back-line"></div>
                 </div>}
 

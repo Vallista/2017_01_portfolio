@@ -9,14 +9,16 @@ class TreePage extends Component {
 
         this.state = {
             isChange: false,
-        }
+        };
+
+        window.scrollTo(0, 0);
     }
 
     onReturn = (route) => {
         this.setState({isChange: true});
 
         setTimeout(() => {
-            window.location = process.env.PUBLIC_URL + route;
+            window.location = '#' + route;
         }, 500);
     };
 

@@ -13,6 +13,7 @@ class Home extends Component {
         };
 
         this.fadingDone = this.fadingDone.bind(this);
+        window.scrollTo(0, 0);
     }
 
     paging() {
@@ -22,7 +23,7 @@ class Home extends Component {
     }
 
     fadingDone () {
-        window.location = process.env.PUBLIC_URL + '/projects';
+        window.location = '#/projects';
     }
 
     componentWillUnmount () {
@@ -34,26 +35,24 @@ class Home extends Component {
         return (
             <div>
                 <Nav name="home" />
-                <div className={this.state.isPaging ? "fadeOut" : ""} ref='rect' style={{height: "300vh", width: "100%"}}>
-                    {/*<div data-aos="fade-up" data-aos-anchor-placement="top-center">*/}
-                        <div className="bgimg-1" style={{backgroundImage: `url(${BG1})`, height: "100vh"}}>
-                            <SplashPage/>
-                        </div>
-                    {/*</div>*/}
-                    {/*<div data-aos="fade-up" data-aos-anchor-placement="top-center">*/}
-                        <div className="bgimg-2" style={{backgroundImage: `url(${BG2})`, height: "100vh"}}>
-                            <IntroPage/>
-                        </div>
-                    {/*</div>*/}
-                    {/*<div data-aos="fade-up" data-aos-anchor-placement="top-center">*/}
-                        <div className="bgimg-3" style={{backgroundImage: `url(${BG3})`, height: "100vh"}}>
-                            <PortfolioPage paging={this.paging.bind(this)}/>
-                        </div>
-                    {/*</div>*/}
+                <div className={this.state.isPaging ? "fadeOut" : "fadeIn"} ref='rect' style={{height: "300vh", width: "100%"}}>
+                    <div className="bgimg-1" style={{backgroundImage: `url(${BG1})`, height: "100vh"}}>
+                        <SplashPage/>
+                    </div>
+                    <div className="bgimg-2" style={{backgroundImage: `url(${BG2})`, height: "100vh"}}>
+                        <IntroPage/>
+                    </div>
+                    <div className="bgimg-3" style={{backgroundImage: `url(${BG3})`, height: "100vh"}}>
+                        <PortfolioPage paging={this.paging.bind(this)}/>
+                    </div>
                 </div>
             </div>
         );
     }
+};
+
+Home.defaultProps = {
+
 };
 
 export default Home;

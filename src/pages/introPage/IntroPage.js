@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { WrapperImg, BG2, FBIcon, GHIcon, TSIcon, CardGroup } from '../../components';
+import { FBIcon, GHIcon, TSIcon, CardGroup } from '../../components';
 import { UserInfo } from '../../config';
 import './IntroPage.css';
 
@@ -21,7 +21,6 @@ class IntroPage extends Component {
 
         return (
             <div style={{height: "100vh", width: "100%", position: "relative"}}>
-                <WrapperImg img={BG2} zIndex={0} width={"100%"} height={"100%"}/>
                 <div className="layer">
                     <div className="layer-inner">
                         <div className="content">

@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import {Nav, WrapperImg, BG3, DownIcon} from '../../components';
+import {Nav, WrapperImg, BG3, DownIcon, BG1} from '../../components';
 import { PostContainer } from '../../container';
 import './TreePage.css';
 

@@ -1,12 +1,11 @@
 import React, { Component } from 'react';
-import { WrapperImg, BG1, DownIcon } from '../../components';
+import { DownIcon } from '../../components';
 import './SplashPage.css';
 
 class SplashPage extends Component {
     render() {
         return (
             <div style={{height: "100vh", width: "100%", position: "relative"}}>
-                <WrapperImg img={BG1} zIndex={0} width={"100%"} height={"100%"}/>
                 <div className="layer">
                     <div className="layer-inner">
                         <div className="content">

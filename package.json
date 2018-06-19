@@ -2,7 +2,7 @@
   "name": "portfolio",
   "version": "0.1.0",
   "private": true,
-  "homepage": "http://vallista.github.io/portfolio",
+  "homepage": "http://vallista.github.io/2017_01_portfolio",
   "dependencies": {
     "aos": "^2.2.0",
     "gh-pages": "^1.1.0",
